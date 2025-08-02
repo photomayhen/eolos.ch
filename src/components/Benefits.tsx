@@ -15,44 +15,44 @@ import {
 const benefits = [
   {
     icon: DollarSign,
-    title: "20%+ Cost Reduction",
-    description: "Average cost savings achieved through strategic vendor selection and negotiation excellence.",
-    stats: "Average savings: $2.3M annually",
+    title: "Cost Reduction",
+    description: "Strategic vendor selection and negotiation excellence drive significant cost savings.",
+    stats: "*Potential figures based on market research and industry standards",
     color: "text-green-600"
   },
   {
     icon: Clock,
-    title: "60% Faster Processing",
+    title: "Faster Processing",
     description: "Streamlined procurement cycles through intelligent automation and optimized workflows.",
-    stats: "Average cycle: 15 days vs 38 days",
-    color: "text-blue-600"
+    stats: "*Potential figures based on market research and industry standards",
+    color: "text-primary"
   },
   {
     icon: Shield,
-    title: "99.9% Compliance Rate",
+    title: "Compliance Excellence",
     description: "Robust compliance framework ensuring adherence to regulations and internal policies.",
-    stats: "Zero compliance violations in 2024",
+    stats: "*Potential figures based on market research and industry standards",
     color: "text-purple-600"
   },
   {
     icon: TrendingUp,
     title: "Enhanced ROI",
     description: "Measurable returns on procurement investments through data-driven decision making.",
-    stats: "Average ROI: 340%",
+    stats: "*Potential figures based on market research and industry standards",
     color: "text-primary"
   },
   {
     icon: Users,
     title: "Vendor Optimization",
     description: "Curated vendor ecosystem with pre-qualified, performance-monitored suppliers.",
-    stats: "500+ verified vendors",
+    stats: "*Potential figures based on market research and industry standards",
     color: "text-orange-600"
   },
   {
     icon: Award,
     title: "Quality Assurance",
     description: "Comprehensive quality control processes ensuring excellence in every delivery.",
-    stats: "98.7% quality score",
+    stats: "*Potential figures based on market research and industry standards",
     color: "text-indigo-600"
   }
 ];
@@ -174,27 +174,31 @@ export const Benefits = () => {
             <Card className="gradient-card shadow-elegant border-border/50">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-gradient mb-2">20%</div>
-                  <div className="text-lg font-semibold text-foreground">Average Cost Reduction</div>
+                  <div className="text-2xl font-bold text-gradient mb-2">Transformative Results</div>
+                  <div className="text-lg font-semibold text-foreground">Built on Excellence</div>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-border/30">
-                    <span className="text-muted-foreground">Processing Time</span>
-                    <span className="font-semibold text-foreground">-60%</span>
+                    <span className="text-muted-foreground">Processing Efficiency</span>
+                    <span className="font-semibold text-foreground">Enhanced*</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/30">
                     <span className="text-muted-foreground">Vendor Quality</span>
-                    <span className="font-semibold text-foreground">+40%</span>
+                    <span className="font-semibold text-foreground">Optimized*</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-border/30">
-                    <span className="text-muted-foreground">Compliance Rate</span>
-                    <span className="font-semibold text-foreground">99.9%</span>
+                    <span className="text-muted-foreground">Compliance Excellence</span>
+                    <span className="font-semibold text-foreground">Assured*</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-muted-foreground">Client Satisfaction</span>
-                    <span className="font-semibold text-foreground">4.9/5</span>
+                    <span className="font-semibold text-foreground">Premium*</span>
                   </div>
+                </div>
+                
+                <div className="mt-4 text-xs text-muted-foreground text-center">
+                  *Potential figures based on market research and industry standards, not our experience (new business)
                 </div>
 
                 <div className="mt-6 p-4 bg-primary/10 rounded-lg">

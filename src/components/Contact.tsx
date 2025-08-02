@@ -184,9 +184,6 @@ export const Contact = () => {
                   <Button size="lg" className="w-full gradient-primary shadow-soft">
                     Schedule a Free Consultation
                   </Button>
-                  <Button variant="outline" size="lg" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                    Download Our Brochure
-                  </Button>
                 </div>
                 <p className="text-xs text-muted-foreground">
                   No commitment required • 30-minute consultation • Custom solution design

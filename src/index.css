@@ -17,11 +17,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* EOLOS Brand Colors - Inspired by logo gradients */
-    --primary: 200 98% 39%;
+    /* EOLOS Brand Colors - Light Blue: #05A8C9 H:190 S:95 L:40, Dark Blue: #106EA1 H:201 S:82 L:35 */
+    --primary: 190 95% 40%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 195 100% 50%;
-    --primary-dark: 205 90% 30%;
+    --primary-light: 190 95% 50%;
+    --primary-dark: 201 82% 35%;
 
     --secondary: 210 40% 96%;
     --secondary-foreground: 215 25% 27%;
@@ -82,10 +82,10 @@
     --popover: 215 28% 17%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 195 100% 50%;
+    --primary: 190 95% 50%;
     --primary-foreground: 215 28% 17%;
-    --primary-light: 195 100% 60%;
-    --primary-dark: 205 90% 40%;
+    --primary-light: 190 95% 60%;
+    --primary-dark: 201 82% 40%;
 
     --secondary: 217 33% 20%;
     --secondary-foreground: 210 40% 98%;

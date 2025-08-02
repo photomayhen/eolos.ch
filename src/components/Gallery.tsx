@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import daVinciProcurement from "@/assets/davinci-procurement.jpg";
 import daVinciBuilding from "@/assets/davinci-building.jpg";
 import daVinciNetwork from "@/assets/davinci-network.jpg";
+import daVinciMarketResearch from "@/assets/davinci-market-research.jpg";
+import daVinciMarketingCampaign from "@/assets/davinci-marketing-campaign.jpg";
 
 const galleryItems = [
   {
@@ -25,35 +27,32 @@ const galleryItems = [
     description: "Intelligent data flow patterns that mirror the natural systems studied by Renaissance masters."
   },
   {
-    image: daVinciProcurement,
-    title: "Vendor Ecosystem",
-    category: "Relationship Management",
-    description: "Comprehensive vendor management systems designed with the precision of Renaissance craftsmanship."
+    image: daVinciMarketResearch,
+    title: "Market Research & Analysis",
+    category: "Intelligence",
+    description: "Comprehensive market understanding and competitive analysis with data-driven insights."
+  },
+  {
+    image: daVinciMarketingCampaign,
+    title: "Marketing Campaign Strategy",
+    category: "Campaign Design",
+    description: "End-to-end marketing campaign execution from concept to results with strategic precision."
   },
   {
     image: daVinciBuilding,
     title: "Contract Framework",
     category: "Legal Architecture",
     description: "Robust contract management frameworks built on principles of transparency and mutual benefit."
-  },
-  {
-    image: daVinciNetwork,
-    title: "Performance Analytics",
-    category: "Intelligence",
-    description: "Beautiful analytics dashboards that make complex procurement data accessible and actionable."
   }
 ];
 
 const amenities = [
-  "24/7 Expert Support",
   "Dedicated Account Management",
   "Custom Integration Services",
   "Advanced Security Protocols",
   "Real-time Monitoring",
   "Compliance Assurance",
-  "Performance Guarantees",
   "Training & Onboarding",
-  "Mobile Access",
   "API Integration",
   "Custom Reporting",
   "Multi-language Support"

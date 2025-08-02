@@ -15,7 +15,7 @@ import daVinciNetwork from "@/assets/davinci-network.jpg";
 const services = [
   {
     icon: FileText,
-    title: "RFQ Management",
+    title: "RFx/Tender Management",
     description: "Streamlined Request for Quotation processes with automated vendor matching and intelligent proposal analysis.",
     features: ["Automated vendor selection", "Real-time quote comparison", "Digital documentation"]
   },
@@ -60,6 +60,18 @@ const services = [
     title: "Performance Analytics",
     description: "Deep insights into procurement performance with beautiful dashboards inspired by Renaissance art.",
     features: ["Custom reporting", "KPI monitoring", "Predictive analytics"]
+  },
+  {
+    icon: Search,
+    title: "Market Research & Competitive Analysis",
+    description: "Data-driven insights that inform your business decisions with comprehensive market understanding.",
+    features: ["Comprehensive market analysis", "Pricing analysis, positioning, and gap identification", "Customer survey execution, data collection, and analysis"]
+  },
+  {
+    icon: TrendingUp,
+    title: "Product Launch Marketing Campaign",
+    description: "End-to-end campaign execution from concept to results with strategic precision.",
+    features: ["Complete campaign strategy", "Marketing materials creation", "Launch event planning"]
   }
 ];
 
@@ -100,7 +112,7 @@ export const Services = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-6">
-            Procurement & Supply Chain
+            Marketing, Digitalization, Procurement & Supply Chain
             <span className="text-gradient block">Excellence</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
