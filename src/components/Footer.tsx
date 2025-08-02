@@ -123,7 +123,8 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-background/70 text-sm">
-              © 2024 EOLOS Consulting. All rights reserved.
+              <p>© 2024 EOLOS Consulting. All rights reserved.</p>
+              <p className="text-xs mt-1">*Potential figures based on market research and industry standards, not our experience (new business)</p>
             </div>
 
             {/* Social Links */}

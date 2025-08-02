@@ -129,9 +129,6 @@ export const Benefits = () => {
                       <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
                         {benefit.description}
                       </p>
-                      <p className="text-xs font-medium text-primary">
-                        {benefit.stats}
-                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -162,9 +159,11 @@ export const Benefits = () => {
               ))}
             </div>
 
-            <Button size="lg" className="gradient-primary shadow-elegant group">
-              Start Your Transformation
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Button size="lg" className="gradient-primary shadow-elegant group" asChild>
+              <a href="#contact">
+                Start Your Transformation
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
           </div>
 
@@ -197,9 +196,6 @@ export const Benefits = () => {
                   </div>
                 </div>
                 
-                <div className="mt-4 text-xs text-muted-foreground text-center">
-                  *Potential figures based on market research and industry standards, not our experience (new business)
-                </div>
 
                 <div className="mt-6 p-4 bg-primary/10 rounded-lg">
                   <p className="text-sm text-sepia-dark font-playfair italic text-center">

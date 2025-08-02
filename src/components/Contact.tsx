@@ -152,22 +152,17 @@ export const Contact = () => {
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {contactInfo.map((info, index) => {
-                const Icon = info.icon;
-                return (
-                  <Card key={index} className="gradient-card shadow-soft hover:shadow-elegant transition-all duration-300 border-border/50 group cursor-pointer">
-                    <CardContent className="p-6 text-center">
-                      <div className="mx-auto mb-4 p-3 rounded-lg bg-primary/10 w-fit group-hover:bg-primary/20 transition-colors">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <h3 className="font-semibold text-foreground mb-2">{info.title}</h3>
-                      <p className="text-sm text-muted-foreground mb-2">{info.details}</p>
-                      <p className="text-xs text-primary font-medium">{info.action}</p>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+            <div className="flex justify-center">
+              <Card className="gradient-card shadow-soft hover:shadow-elegant transition-all duration-300 border-border/50 group cursor-pointer">
+                <CardContent className="p-6 text-center">
+                  <div className="mx-auto mb-4 p-3 rounded-lg bg-primary/10 w-fit group-hover:bg-primary/20 transition-colors">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">Email</h3>
+                  <p className="text-sm text-muted-foreground mb-2">info@eolos.ch</p>
+                  <p className="text-xs text-primary font-medium">Send us a message</p>
+                </CardContent>
+              </Card>
             </div>
 
             {/* CTA Section */}

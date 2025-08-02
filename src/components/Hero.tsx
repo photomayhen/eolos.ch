@@ -56,9 +56,11 @@ export const Hero = () => {
           <div className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-1000 delay-600 ${
             isVisible ? 'animate-fade-in-up' : 'opacity-0'
           }`}>
-            <Button size="lg" className="gradient-primary shadow-elegant text-lg px-8 py-6 group">
-              Discover Our Solutions
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Button size="lg" className="gradient-primary shadow-elegant text-lg px-8 py-6 group" asChild>
+              <a href="#services">
+                Discover Our Solutions
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <Button 
               variant="outline" 
