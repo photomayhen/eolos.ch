@@ -61,15 +61,11 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary-light" />
-                <span className="text-sm">hello@eolos.consulting</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-primary-light" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">info@eolos.ch</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-primary-light" />
-                <span className="text-sm">Global Offices</span>
+                <span className="text-sm">Winterthur</span>
               </div>
             </div>
           </div>
