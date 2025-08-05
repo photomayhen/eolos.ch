@@ -6,6 +6,7 @@ import daVinciBuilding from "@/assets/davinci-building.jpg";
 import daVinciNetwork from "@/assets/davinci-network.jpg";
 import daVinciMarketResearch from "@/assets/davinci-market-research.jpg";
 import daVinciMarketingCampaign from "@/assets/davinci-marketing-campaign.jpg";
+import daVinciContractFramework from "@/assets/davinci-contract-framework.jpg";
 
 const galleryItems = [
   {
@@ -39,7 +40,7 @@ const galleryItems = [
     description: "End-to-end marketing campaign execution from concept to results with strategic precision."
   },
   {
-    image: daVinciBuilding,
+    image: daVinciContractFramework,
     title: "Contract Framework",
     category: "Legal Architecture",
     description: "Robust contract management frameworks built on principles of transparency and mutual benefit."
