@@ -5,11 +5,13 @@ import { Benefits } from "@/components/Benefits";
 import { Gallery } from "@/components/Gallery";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { NewsletterModal } from "@/components/NewsletterModal";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      <NewsletterModal />
       <main>
         <section id="home">
           <Hero />
