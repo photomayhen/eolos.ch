@@ -49,15 +49,6 @@ export const Navigation = () => {
             ))}
           </div>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-foreground hover:text-primary">
-              Login
-            </Button>
-            <Button className="gradient-primary shadow-soft">
-              Get Started
-            </Button>
-          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -89,14 +80,6 @@ export const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="flex flex-col space-y-2 px-4 pt-4 border-t border-border">
-                <Button variant="ghost" className="justify-start">
-                  Login
-                </Button>
-                <Button className="gradient-primary">
-                  Get Started
-                </Button>
-              </div>
             </div>
           </div>
         )}
