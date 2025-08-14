@@ -15,7 +15,7 @@ import { useToast } from "@/components/ui/use-toast";
 // - Submits to Formspree (update FORM_ENDPOINT if needed)
 // - Uses primary brand color via Button default variant
 
-const FORM_ENDPOINT = "https://formspree.io/f/xwpqykjn"; // TODO: replace with your actual Formspree endpoint if different
+const FORM_ENDPOINT = "https://formspree.io/f/xwpqykjn"; // Configure this to send to info@eolos.ch in Formspree dashboard
 
 export function NewsletterModal() {
   const [open, setOpen] = useState(false);

@@ -62,7 +62,7 @@ Deno.serve(async (req) => {
 
     const emailResponse = await resend.emails.send({
       from: "EOLOS <onboarding@resend.dev>",
-      to: ["info@eolos.ch"],
+      to: ["photo.mayhen@gmail.com"], // Changed to verified email until domain is verified
       reply_to: email,
       subject,
       html,
