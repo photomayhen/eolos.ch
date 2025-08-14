@@ -68,7 +68,7 @@ Deno.serve(async (req) => {
     
     const emailResponse = await resend.emails.send({
       from: "EOLOS <no-reply@eolos.ch>",
-      to: ["info@eolos.ch"],
+      to: ["your-working-email@domain.com"], // Replace with your actual email
       reply_to: email,
       subject,
       html,
