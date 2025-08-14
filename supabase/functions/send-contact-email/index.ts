@@ -37,6 +37,8 @@ Deno.serve(async (req) => {
     }
 
     const resendApiKey = Deno.env.get("RESEND_API_KEY");
+    console.log("Resend API Key exists:", !!resendApiKey);
+    
     if (!resendApiKey) {
       console.error("RESEND_API_KEY is not set");
       return new Response(JSON.stringify({ error: "Email service not configured" }), {
