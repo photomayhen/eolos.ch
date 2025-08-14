@@ -65,6 +65,7 @@ Deno.serve(async (req) => {
     // Also log the recipient for debugging
     console.log("Sending email to: info@eolos.ch");
     console.log("Email subject:", subject);
+    console.log("Deployment check: Force refresh for info@eolos.ch recipient");
     
     const emailResponse = await resend.emails.send({
       from: "EOLOS <no-reply@eolos.ch>",
