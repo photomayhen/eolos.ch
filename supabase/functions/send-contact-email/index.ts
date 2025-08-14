@@ -61,7 +61,7 @@ Deno.serve(async (req) => {
     const text = `New Contact Message\n\nName: ${name}\nEmail: ${email}\nCompany: ${company || "-"}\n\nMessage:\n${message}`;
 
     const emailResponse = await resend.emails.send({
-      from: "EOLOS <onboarding@resend.dev>",
+      from: "EOLOS <no-reply@eolos.ch>",
       to: ["info@eolos.ch"],
       reply_to: email,
       subject,
