@@ -69,7 +69,15 @@ Deno.serve(async (req) => {
       text,
     });
 
-    console.log("Email sent:", emailResponse);
+    console.log("Email sent response:", JSON.stringify(emailResponse, null, 2));
+    
+    if (emailResponse.error) {
+      console.error("Resend API error:", emailResponse.error);
+      return new Response(JSON.stringify({ error: "Failed to send email", details: emailResponse.error }), {
+        status: 500,
+        headers: { "Content-Type": "application/json", ...corsHeaders },
+      });
+    }
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
