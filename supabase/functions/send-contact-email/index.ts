@@ -62,6 +62,10 @@ Deno.serve(async (req) => {
     `;
     const text = `New Contact Message\n\nName: ${name}\nEmail: ${email}\nCompany: ${company || "-"}\n\nMessage:\n${message}`;
 
+    // Also log the recipient for debugging
+    console.log("Sending email to: info@eolos.ch");
+    console.log("Email subject:", subject);
+    
     const emailResponse = await resend.emails.send({
       from: "EOLOS <no-reply@eolos.ch>",
       to: ["info@eolos.ch"],
