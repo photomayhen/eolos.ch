@@ -6,8 +6,11 @@ import { Gallery } from "@/components/Gallery";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { NewsletterModal } from "@/components/NewsletterModal";
+import { useAnalytics } from "@/hooks/useAnalytics";
 
 const Index = () => {
+  useAnalytics(); // Track anonymous visits
+  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
