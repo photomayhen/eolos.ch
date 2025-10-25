@@ -9,13 +9,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
-// Minimal newsletter modal using design system tokens
+// Newsletter modal with Supabase backend
 // - Auto-opens after 5s if user hasn't subscribed or dismissed
-// - Submits to Formspree (update FORM_ENDPOINT if needed)
-// - Uses primary brand color via Button default variant
-
-const FORM_ENDPOINT = "https://formspree.io/f/xwpqykjn"; // Configure this to send to info@eolos.ch in Formspree dashboard
+// - Stores subscribers in Supabase database
+// - Includes unsubscribe token management
 
 export function NewsletterModal() {
   const [open, setOpen] = useState(false);
@@ -40,33 +39,50 @@ export function NewsletterModal() {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    
     try {
       const form = e.currentTarget;
-      const data = new FormData(form);
-      const res = await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+      const formData = new FormData(form);
+      const email = formData.get("email") as string;
+
+      if (!email || !email.trim()) {
+        toast({
+          title: "Error",
+          description: "Please enter your email address.",
+          variant: "destructive",
+        });
+        setLoading(false);
+        return;
+      }
+
+      console.log("Subscribing email:", email);
+
+      const { data, error } = await supabase.functions.invoke('subscribe-newsletter', {
+        body: { email: email.trim() },
       });
 
-      if (res.ok) {
-        localStorage.setItem("newsletter_status", "subscribed");
-        toast({
-          title: "Subscribed",
-          description: "You have been subscribed to our newsletter.",
-        });
-        form.reset();
-        setOpen(false);
-      } else {
+      if (error) {
+        console.error("Subscription error:", error);
         toast({
           title: "Subscription failed",
           description: "Please try again in a moment.",
+          variant: "destructive",
         });
+      } else {
+        localStorage.setItem("newsletter_status", "subscribed");
+        toast({
+          title: "Subscribed!",
+          description: data.message || "You have been subscribed to our newsletter.",
+        });
+        form.reset();
+        setOpen(false);
       }
     } catch (err) {
+      console.error("Network error:", err);
       toast({
         title: "Network error",
         description: "Check your connection and try again.",
+        variant: "destructive",
       });
     } finally {
       setLoading(false);
